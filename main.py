@@ -19,12 +19,12 @@ def segundos_para_hhmmss(seg):
 
 def escolher_arquivo():
     global duracao_video, clip, tipo_clip
-    caminho = filedialog.askopenfilename(filetypes=[("Mídia", "*.mp4 *.avi *.mov *.mkv *.mp3 *.wav")])
+    caminho = filedialog.askopenfilename(filetypes=[("Mídia", "*.mp4 *.avi *.mov *.mkv *.mp3 *.wav *.m4a")])
     if caminho:
         entrada_entry.delete(0, tk.END)
         entrada_entry.insert(0, caminho)
         try:
-            if caminho.lower().endswith((".mp3", ".wav")):
+            if caminho.lower().endswith((".mp3", ".wav", ".m4a")):
                 clip = AudioFileClip(caminho)
                 tipo_clip = "audio"
             else:
