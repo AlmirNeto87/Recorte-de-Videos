@@ -1,5 +1,3 @@
-cd "e:\Programacao\VS Code\Recorte de Videos" ; python -c "text = '''# Cortador de Vídeo/Áudio com HH:MM:SS
-
 Aplicativo desktop em Python para recortar segmentos de vídeos e áudios usando tempo de início e fim em formato `HH:MM:SS`, com interface gráfica (Tkinter) e processamento via MoviePy.
 
 ## Funcionalidades
